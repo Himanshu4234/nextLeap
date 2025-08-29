@@ -1,0 +1,27 @@
+{
+    "heading": "Our Services",
+    "intro": "At NextLeap IT Services, we provide a wide range of technology solutions to empower your business.",
+    "items": [
+      {
+        "icon": "☁️",
+        "title": "Cloud Solutions",
+        "description": "Secure, scalable cloud platforms to modernize your IT infrastructure."
+      },
+      {
+        "icon": "🤖",
+        "title": "AI & Automation",
+        "description": "Leverage AI to automate workflows and enhance decision-making."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Cybersecurity",
+        "description": "Protect your data with advanced security frameworks and compliance."
+      },
+      {
+        "icon": "📱",
+        "title": "App Development",
+        "description": "Custom web and mobile applications tailored to your business needs."
+      }
+    ]
+  }
+  

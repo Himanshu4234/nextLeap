@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main   # change if your repo's default is different
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - name: "services"
+        label: "Services Section"
+        file: "public/content/services.json"
+        format: "json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Services"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "string", required: false }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
