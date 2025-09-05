@@ -1,27 +1,46 @@
 {
-    "heading": "Our Services",
-    "intro": "At NextLeap IT Services, we provide a wide range of technology solutions to empower your business.",
-    "items": [
-      {
-        "icon": "☁️",
-        "title": "Cloud Solutions",
-        "description": "Secure, scalable cloud platforms to modernize your IT infrastructure."
-      },
-      {
-        "icon": "🤖",
-        "title": "AI & Automation",
-        "description": "Leverage AI to automate workflows and enhance decision-making."
-      },
-      {
-        "icon": "🛡️",
-        "title": "Cybersecurity",
-        "description": "Protect your data with advanced security frameworks and compliance."
-      },
-      {
-        "icon": "📱",
-        "title": "App Development",
-        "description": "Custom web and mobile applications tailored to your business needs."
-      }
-    ]
-  }
-  
+  "heading": "Our Services",
+  "intro": "At NextLeap IT Services, we provide a complete suite of IT and digital solutions to help your business thrive online.",
+  "items": [
+    {
+      "icon": "🌐",
+      "title": "Website Design & Development",
+      "points": [
+        "Custom website creation (responsive & modern)",
+        "Domain & hosting setup with CMS",
+        "Landing pages for campaigns",
+        "E-commerce stores with payment integration",
+        "Content management systems"
+      ]
+    },
+    {
+      "icon": "🛠️",
+      "title": "Technical Support & Maintenance",
+      "points": [
+        "Ongoing updates, backups, and monitoring",
+        "Domain & hosting support",
+        "Business email setup (Google Workspace, MS 365)",
+        "24/7 technical assistance"
+      ]
+    },
+    {
+      "icon": "📢",
+      "title": "Digital Advertising & Lead Generation",
+      "points": [
+        "Google Ads management (search & display)",
+        "Facebook & Instagram ad campaigns",
+        "Retargeting campaigns to re-engage visitors",
+        "Campaign tracking & reporting"
+      ]
+    },
+    {
+      "icon": "🎯",
+      "title": "Consulting & Training",
+      "points": [
+        "Digital strategy consulting",
+        "Personalized growth roadmaps",
+        "Staff training on IT tools, ads & management"
+      ]
+    }
+  ]
+}

@@ -36,7 +36,6 @@ header, .navbar {
     margin-right: 8px;
     box-shadow: 0 2px 8px rgba(120,82,179,0.09);
     border-radius: 8px;
-    background: #222;
     padding: 2px;
 }
 
@@ -200,7 +199,7 @@ header, .navbar {
     flex-direction: column;
     gap: 8px;
 }
-.container {
+/* .container {
     width: 240px; height: 70px;
     margin: 6px 0;
     display: flex;
@@ -209,7 +208,7 @@ header, .navbar {
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 6px;
-}
+} */
 .container.green { background: #3e5647; color: #fff; }
 .container.white { background: #ececec; color: #222; }
 .container.black { background: #222; color: #fff; width: 200px; height: 110px; }
@@ -576,6 +575,7 @@ header, .navbar {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    justify-items: center;
   }
   
   .service-card {
@@ -589,6 +589,9 @@ header, .navbar {
   
   .service-card:hover {
     transform: translateY(-5px);
+  }
+  .card h3,.service-card h3{
+    color: #4aa7d6 !important;
   }
   
   

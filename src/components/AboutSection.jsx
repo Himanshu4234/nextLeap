@@ -1,30 +1,30 @@
 export default function AboutSection() {
-    return (
-      <section className="about">
-        <div className="about-content">
-          <h2>Why Choose NextLeap IT Services?</h2>
-          <p>
-            We provide scalable, secure, and innovative IT solutions tailored to your
-            business needs. From cloud transformation to AI-driven applications,
-            our mission is to help your business grow smarter and faster.
-          </p>
-  
-          <div className="about-features">
-            <div className="feature">
-              <h3>⚡ Innovation</h3>
-              <p>Cutting-edge solutions designed to keep your business ahead.</p>
-            </div>
-            <div className="feature">
-              <h3>🔒 Security</h3>
-              <p>Robust systems to protect your data and ensure privacy.</p>
-            </div>
-            <div className="feature">
-              <h3>🌍 Scalability</h3>
-              <p>Solutions that grow with your company’s ambitions.</p>
-            </div>
+  return (
+    <section className="about">
+      <div className="about-content">
+        <h2>Why Choose NextLeap IT Services?</h2>
+        <p>
+          We are your trusted IT solutions partner. Our mission is to simplify technology
+          and empower businesses with innovative, secure, and scalable digital solutions.
+          From web development to digital marketing and cloud IT, we help your business
+          thrive in today’s digital world.
+        </p>
+
+        <div className="about-features">
+          <div className="feature">
+            <h3>⚡ Innovation</h3>
+            <p>Modern, cutting-edge solutions to keep your business competitive.</p>
+          </div>
+          <div className="feature">
+            <h3>🔒 Security</h3>
+            <p>Rebust systems to safeguard your business and customer data.</p>
+          </div>
+          <div className="feature">
+            <h3>🌍 Scalability</h3>
+            <p>Flexible solutions that grow as your business expands.</p>
           </div>
         </div>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+  );
+}

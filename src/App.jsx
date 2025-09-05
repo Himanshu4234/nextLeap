@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
@@ -7,13 +6,17 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
-import ContactSection from "./components/ContactSection";
+import WhyWorkWithUs from "./components/WhyWorkWithUs";
+import HowWeWork from "./components/HowWeWork";
+import ConnectWithUs from "./components/ConnectWithUs";
 import Footer from "./components/Footer";
+import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <WhatsAppFloatingButton/>
 
       <main className="flex-grow">
         <Routes>
@@ -25,7 +28,10 @@ function App() {
                 <Hero />
                 <AboutSection />
                 <ServicesSection />
-                <ContactSection />
+                <WhyWorkWithUs/>
+                <HowWeWork/>
+                <ConnectWithUs/>
+                {/* <ContactSection /> */}
               </>
             }
           />
