@@ -8,8 +8,8 @@ export default function Contact() {
   title="Contact NextLeap IT Solutions | Get in Touch"
   description="Contact NextLeap IT Solutions today for professional IT services, support, and solutions tailored to your business needs."
   keywords="Contact NextLeap IT solutions, IT support, IT services help"
-  url="https://nextleap.com/contact"
-  image="https://nextleap.com/images/contact-og.jpg"
+  url={`${window.location.origin}/contact`}
+  image={`${window.location.origin}/images/contact-og.jpg`}
 />
     <div className="contact-page">
       {/* Hero Section */}

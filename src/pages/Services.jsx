@@ -6,8 +6,8 @@ export default function Services() {
       title="IT Services by NextLeap | Cloud, Consulting & Support"
       description="Explore NextLeap's IT services including cloud computing, IT consulting, cybersecurity, and reliable business IT support."
       keywords="IT services NextLeap, cloud IT, cybersecurity, IT consulting, business IT solutions"
-      url="https://nextleap.com/services"
-      image="https://nextleap.com/images/services-og.jpg"
+      url={`${window.location.origin}/services`}
+      image={`${window.location.origin}/images/services-og.jpg`}
     />
     <div className="services-page">
       {/* Hero Section */}
