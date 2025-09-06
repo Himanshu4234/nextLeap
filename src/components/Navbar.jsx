@@ -1,5 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import linkedinIcon from "../assets/linkedin.png";   // Add your LinkedIn icon image to assets
+import instagramIcon from "../assets/instagram.png"; // Add your Instagram icon image to assets
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +29,16 @@ export default function Navbar() {
           <a href="/contact">Contact Us</a>
         </div>
 
+        {/* Social Icons */}
+        <div className="nav-social">
+          <a href="https://www.linkedin.com/in/nextleap-it-solutions-118707380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+          </a>
+          <a href="https://www.instagram.com/nextleap_it_solutions?igsh=dnQyOHZ0ZG96cGps" target="_blank" rel="noopener noreferrer">
+            <img src={instagramIcon} alt="Instagram" className="social-icon" />
+          </a>
+        </div>
+
         {/* Hamburger Button */}
         <div className={`hamburger ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
           <span></span>
@@ -42,6 +54,14 @@ export default function Navbar() {
           <li><a href="/about" onClick={toggleMenu}>About us</a></li>
           <li><a href="/services" onClick={toggleMenu}>Services</a></li>
           <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/nextleap-it-solutions-118707380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>
+              <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+            </a>
+            <a href="https://www.instagram.com/nextleap_it_solutions?igsh=dnQyOHZ0ZG96cGps" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>
+              <img src={instagramIcon} alt="Instagram" className="social-icon" />
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -76,6 +96,26 @@ export default function Navbar() {
           color: #fff;
           font-weight: 600;
           text-decoration: none;
+        }
+        .nav-social {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          margin-left: 32px;
+        }
+          .nav-buttons {
+  margin-left: 18px; /* optional: adds a little space before the button */
+}
+        .social-icon {
+          width: 26px;
+          height: 26px;
+          object-fit: contain;
+          filter: grayscale(0.2) brightness(0.95);
+          transition: filter 0.2s, transform 0.2s;
+        }
+        .social-icon:hover {
+          filter: none;
+          transform: scale(1.13) rotate(-8deg);
         }
 
         /* Hamburger (hidden on desktop) */
@@ -136,10 +176,16 @@ export default function Navbar() {
         .mobile-menu a:hover {
           color: #3b82f6;
         }
+        .mobile-menu .social-icon {
+          width: 28px;
+          height: 28px;
+          margin-right: 8px;
+          vertical-align: middle;
+        }
 
         /* Responsive */
         @media (max-width: 768px) {
-          .nav-links, .nav-buttons {
+          .nav-links, .nav-buttons, .nav-social {
             display: none;
           }
           .hamburger {
@@ -149,13 +195,14 @@ export default function Navbar() {
             border-radius: 0px;
           }
           .navbar {
-          border-radius: 0px;
-          background: none;
-          padding: 0px;
-          flex-direction: row;
-        }
-        .logo img{
-          background: none;
+            border-radius: 0px;
+            background: none;
+            padding: 0px;
+            flex-direction: row;
+          }
+          .logo img{
+            background: none;
+          }
         }
       `}</style>
     </header>
