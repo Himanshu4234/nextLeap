@@ -8,8 +8,8 @@ export default function About() {
         title="About NextLeap IT Solutions | Trusted IT Partner"
         description="Discover NextLeap IT Solutions – a trusted IT partner delivering secure, scalable, and innovative IT services to help businesses grow globally."
         keywords="About NextLeap IT solutions, IT company, IT partner, business IT services, cloud IT"
-        url="https://nextleap.com/about"
-        image="https://nextleap.com/images/about-og.jpg"
+        url={`${window.location.origin}/abouts`}
+        image={`${window.location.origin}/images/about-og.jpg`}
       />
     <div className="about-page">
       {/* Hero Section */}
