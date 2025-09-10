@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const siteUrl = "https://nextleap.com";
+const siteUrl = "https://nextleapitsolutions.netlify.app";
 
 const pages = [
   { url: "/", changefreq: "daily", priority: 1.0 },
