@@ -8,6 +8,49 @@ export default function Services() {
       keywords="IT services NextLeap, cloud IT, cybersecurity, IT consulting, business IT solutions"
       url={`${window.location.origin}/services`}
       image={`${window.location.origin}/images/services-og.jpg`}
+      schema={{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "NextLeap IT Services",
+        "description": "Professional IT services by NextLeap including cloud computing, IT consulting, cybersecurity, and reliable support for businesses.",
+        "provider": {
+          "@type": "Organization",
+          "name": "NextLeap IT Solutions",
+          "url": `${window.location.origin}`,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${window.location.origin}/logo.png`
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-96548011678",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": ["English"]
+          }
+        },
+        "serviceType": [
+          "Cloud Computing",
+          "IT Consulting",
+          "Cybersecurity",
+          "Managed IT Support",
+          "Digital Transformation"
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": `${window.location.origin}/services`,
+          "priceCurrency": "INR",
+          "eligibleRegion": {
+            "@type": "Country",
+            "name": "India"
+          },
+          "availability": "https://schema.org/InStock"
+        }
+      }}
     />
     <div className="services-page">
       {/* Hero Section */}

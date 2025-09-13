@@ -1,13 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-const SEO = ({ title, description, keywords, url, image }) => {
+const SEO = ({ title, description, keywords, url, image, schema }) => {
   return (
     <Helmet>
       {/* Basic SEO */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
+      {keywords && <meta name="keywords" content={keywords} />}
 
       {/* Open Graph (Facebook/LinkedIn) */}
       <meta property="og:title" content={title} />
@@ -21,6 +21,13 @@ const SEO = ({ title, description, keywords, url, image }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+
+      {/* JSON-LD Structured Data */}
+      {schema && (
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      )}
     </Helmet>
   );
 };

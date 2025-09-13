@@ -8,8 +8,23 @@ export default function About() {
         title="About NextLeap IT Solutions | Trusted IT Partner"
         description="Discover NextLeap IT Solutions – a trusted IT partner delivering secure, scalable, and innovative IT services to help businesses grow globally."
         keywords="About NextLeap IT solutions, IT company, IT partner, business IT services, cloud IT"
-        url={`${window.location.origin}/abouts`}
+        url={`${window.location.origin}/about`}
         image={`${window.location.origin}/images/about-og.jpg`}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About NextLeap IT Solutions",
+          "description": "NextLeap IT Solutions is a trusted IT partner delivering secure, scalable, and innovative IT services.",
+          "url": `${window.location.origin}/about`,
+          "publisher": {
+            "@type": "Organization",
+            "name": "NextLeap IT Solutions",
+            "logo": {
+              "@type": "ImageObject",
+              "url": `${window.location.origin}/logo.png`
+            }
+          }
+        }}
       />
     <div className="about-page">
       {/* Hero Section */}

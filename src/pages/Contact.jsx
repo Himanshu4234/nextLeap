@@ -10,6 +10,28 @@ export default function Contact() {
   keywords="Contact NextLeap IT solutions, IT support, IT services help"
   url={`${window.location.origin}/contact`}
   image={`${window.location.origin}/images/contact-og.jpg`}
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact NextLeap IT Solutions",
+    "description": "Get in touch with NextLeap IT Solutions for scalable and secure IT services, technical support, and digital solutions.",
+    "url": `${window.location.origin}/contact`,
+    "publisher": {
+      "@type": "Organization",
+      "name": "NextLeap IT Solutions",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${window.location.origin}/logo.png`
+      }
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-96548011678", 
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["English"]
+    }
+  }}
 />
     <div className="contact-page">
       {/* Hero Section */}
